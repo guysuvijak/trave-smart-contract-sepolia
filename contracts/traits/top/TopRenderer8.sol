@@ -1,0 +1,29 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.24;
+
+import "../../interfaces/ISVGPartRenderer.sol";
+/*
+* ██████╗ ██╗██╗  ██╗████████╗██╗   ██╗██████╗ ███████╗             
+* ██╔══██╗██║╚██╗██╔╝╚══██╔══╝██║   ██║██╔══██╗██╔════╝             
+* ██████╔╝██║ ╚███╔╝    ██║   ██║   ██║██████╔╝█████╗               
+* ██╔═══╝ ██║ ██╔██╗    ██║   ██║   ██║██╔══██╗██╔══╝               
+* ██║     ██║██╔╝ ██╗   ██║   ╚██████╔╝██║  ██║███████╗             
+* ╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝             
+* ████████╗██████╗  █████╗ ██╗   ██╗███████╗██╗     ███████╗██████╗ 
+* ╚══██╔══╝██╔══██╗██╔══██╗██║   ██║██╔════╝██║     ██╔════╝██╔══██╗
+*    ██║   ██████╔╝███████║██║   ██║█████╗  ██║     █████╗  ██████╔╝
+*    ██║   ██╔══██╗██╔══██║╚██╗ ██╔╝██╔══╝  ██║     ██╔══╝  ██╔══██╗
+*    ██║   ██║  ██║██║  ██║ ╚████╔╝ ███████╗███████╗███████╗██║  ██║
+*    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝
+*/
+
+contract TopRenderer8 is ISVGPartRenderer {
+    function render() public pure override returns (string memory) {
+        return render(0);
+    }
+
+    function render(uint _position) public pure returns (string memory) {
+        if (_position == 1) return string(abi.encodePacked('<path fill="#181425" d="M396 369h9v9h-9zm9 0h9v9h-9zm-18 9h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm9 9h9v9h-9zm9 0h9v9h-9zm-36 9h9v9h-9zm45 0h9v9h-9zm9 9h9v9h-9zm-9 9h9v9h-9zm-9 9h9v9h-9zm9 9h9v9h-9zm9 9h9v9h-9zm-45 9h9v9h-9zm45 0h9v9h-9zm-36 9h9v9h-9zm27 0h9v9h-9zm-18 9h9v9h-9zm9 0h9v9h-9z"/><path fill="#E12D03" d="M396 378h9v9h-9zm9 0h9v9h-9zm0 9h9v9h-9zm9 9h9v9h-9zm0 9h9v9h-9z"/><path fill="#F19319" d="M414 387h9v9h-9z"/><path fill="#C51B06" d="M423 387h9v9h-9zm0 18h9v9h-9zm-9 9h9v9h-9zm9 0h9v9h-9z"/><path fill="#DA791B" d="M423 396h9v9h-9z"/><path fill="#A90909" d="M432 396h9v9h-9zm9 0h9v9h-9zm0 9h9v9h-9zm9 0h9v9h-9zm-9 9h9v9h-9zm-27 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9z"/><path fill="#551C13" d="M405 405h9v9h-9zm9 27h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-27 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-18 9h9v9h-9zm9 0h9v9h-9z"/><path fill="#C35F1D" d="M432 405h9v9h-9zm0 9h9v9h-9zm18 27h9v9h-9zm-9 9h9v9h-9zm9 0h9v9h-9zm-18 9h9v9h-9zm9 0h9v9h-9z"/>'));
+        else return string(abi.encodePacked('<path fill="#181425" d="M279 369h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-36 9h9v9h-9zm45 0h9v9h-9zm27 0h9v9h-9zm36 0h9v9h-9zm-108 9h9v9h-9zm81 0h9v9h-9zm27 0h9v9h-9zm18 0h9v9h-9zm-135 9h9v9h-9zm63 0h9v9h-9zm36 0h9v9h-9zm9 0h9v9h-9zm-108 9h9v9h-9zm63 0h9v9h-9zm-72 9h9v9h-9zm63 0h9v9h-9zm90 0h9v9h-9zm-153 9h9v9h-9zm45 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm90 0h9v9h-9zm-144 9h9v9h-9zm9 0h9v9h-9zm45 0h9v9h-9zm90 0h9v9h-9zm-153 9h9v9h-9zm18 0h9v9h-9zm45 0h9v9h-9zm90 0h9v9h-9zm-144 9h9v9h-9zm54 0h9v9h-9zm90 0h9v9h-9zm-144 9h9v9h-9zm144 0h9v9h-9zm-144 9h9v9h-9zm54 0h9v9h-9zm99 0h9v9h-9zm-99 9h9v9h-9zm99 0h9v9h-9zm-99 9h9v9h-9zm99 0h9v9h-9zm-90 9h9v9h-9zm81 0h9v9h-9zm-72 9h9v9h-9zm63 0h9v9h-9zm-54 9h9v9h-9zm45 0h9v9h-9zm-36 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9z"/><path fill="#FF6F29" d="M279 378h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-9 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-45 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm-36 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-36 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-27 9h9v9h-9z"/><path fill="#6C0C1A" d="M324 378h9v9h-9zm9 9h9v9h-9z"/><path fill="#1D0B11" d="M333 378h9v9h-9zm54 0h9v9h-9zm-45 9h9v9h-9zm45 0h9v9h-9zm-36 9h9v9h-9zm36 0h9v9h-9zm-9 9h9v9h-9z"/><path fill="#FEEC83" d="M279 387h9v9h-9zm9 0h9v9h-9zm9 9h9v9h-9z"/><path fill="#551C13" d="M324 387h9v9h-9zm9 9h9v9h-9zm18 9h9v9h-9zm-63 27h9v9h-9zm18 0h9v9h-9zm-27 9h9v9h-9zm9 0h9v9h-9zm36 0h9v9h-9zm72 0h9v9h-9zm-63 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-72 9h9v9h-9zm9 9h9v9h-9zm72 0h9v9h-9zm-63 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm36 0h9v9h-9zm-27 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9z"/><path fill="#E12D03" d="M315 396h9v9h-9zm0 9h9v9h-9zm-18 9h9v9h-9zm9 0h9v9h-9zm-36 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9z"/><path fill="#3F0D1B" d="M342 396h9v9h-9zm36 0h9v9h-9zm-18 9h9v9h-9zm9 0h9v9h-9z"/><path fill="#D5B391" d="M396 396h9v9h-9zm0 9h9v9h-9zm-72 9h9v9h-9zm72 0h9v9h-9zm-72 9h9v9h-9zm72 0h9v9h-9zm-72 9h9v9h-9zm9 0h9v9h-9zm63 0h9v9h-9zm-9 9h9v9h-9zm18 27h9v9h-9zm-81 9h9v9h-9zm72 0h9v9h-9zm9 0h9v9h-9zm-81 9h9v9h-9zm63 0h9v9h-9zm18 0h9v9h-9zm-9 9h9v9h-9zm-9 9h9v9h-9zm-18 9h9v9h-9zm9 0h9v9h-9z"/><path fill="#E7B233" d="M306 405h9v9h-9z"/><path fill="#E6CBA8" d="M333 405h9v9h-9zm54 0h9v9h-9zm-54 9h9v9h-9zm54 0h9v9h-9zm-54 9h9v9h-9zm18 0h9v9h-9zm36 0h9v9h-9zm-45 9h9v9h-9zm18 0h9v9h-9zm27 0h9v9h-9zm-36 9h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm-45 45h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm45 0h9v9h-9zm-63 9h9v9h-9zm45 0h9v9h-9zm9 0h9v9h-9zm-45 9h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm-27 9h9v9h-9zm9 0h9v9h-9z"/><path fill="#6F2B17" d="M342 405h9v9h-9z"/><path fill="#F6E2BE" d="M342 414h9v9h-9zm36 0h9v9h-9zm-36 9h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm-9 9h9v9h-9zm9 0h9v9h-9zm-9 9h9v9h-9zm-27 54h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-18 9h9v9h-9zm9 0h9v9h-9z"/><path fill="#7C421C" d="M351 414h9v9h-9zm18 0h9v9h-9zm-9 9h9v9h-9zm-9 9h9v9h-9zm-18 9h9v9h-9zm9 0h9v9h-9z"/><path fill="#B57521" d="M360 414h9v9h-9z"/><path fill="#270D0B" d="M279 432h9v9h-9z"/><path fill="#893A1B" d="M297 432h9v9h-9z"/><path fill="#C35F1D" d="M261 441h9v9h-9zm36 0h9v9h-9zm9 0h9v9h-9zm-36 9h9v9h-9zm18 0h9v9h-9zm108 0h9v9h-9zm-126 9h9v9h-9zm117 0h9v9h-9zm9 0h9v9h-9zm-9 9h9v9h-9zm-9 9h9v9h-9z"/><path fill="#F19319" d="M279 450h9v9h-9zm63 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm0 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9z"/><path fill="#262B44" d="M297 450h9v9h-9zm9 0h9v9h-9zm-27 9h9v9h-9zm9 0h9v9h-9zm-18 9h9v9h-9z"/><path fill="#DA791B" d="M324 450h9v9h-9zm0 9h9v9h-9zm9 0h9v9h-9zm36 0h9v9h-9zm9 0h9v9h-9zm-45 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 9h9v9h-9zm9 0h9v9h-9z"/>'));
+    }
+}

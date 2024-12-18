@@ -1,0 +1,13 @@
+{
+  "ArmRenderer#ArmRenderer": "0x1d426fc345358E0d90698147a2b9081BBBbf91E1",
+  "BodyRenderer#BodyRenderer": "0xC41929d36987A09e45C473627a60ca8bBF4ddd7B",
+  "EyeRenderer#EyeRenderer": "0x6dD19730ECCa64A76cF9e5ee500922139c264dAC",
+  "HairRenderers#HairRenderer1": "0x10688668B26313242FF919C42c90AfE05B553024",
+  "HairRenderers#HairRenderer2": "0x87b0fB63ebaAb057c231d6FF9BFdAcd8ac165C51",
+  "HairRenderers#HairRenderer3": "0x134575a0f0D0DA11ff6f56A230C830b0F9aA5c43",
+  "HairRenderers#HairRenderer4": "0x20C3990c9C6F79dF95cDF9aE7afB463d251d060C",
+  "HairRenderers#HairRenderer5": "0x1BD9fAB95dBCdCf1e40Bc8a64295436Ac31CF167",
+  "SVGRenderer#SVGRenderer": "0x0CCA94AC143eFa368C98B1Be8C0Bcd1210078A4E",
+  "TraveCharacter#TraveCharacter": "0x26dDD41afb003c432116904a5daAfB61D69ce6cb",
+  "TraveCharacterV2#TraveCharacterV2": "0x85d800A8AE7C7e8153996cA2Bdbd9d1cB99f8FF9"
+}

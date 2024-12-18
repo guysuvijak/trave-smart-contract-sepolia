@@ -1,0 +1,29 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.24;
+
+import "../../interfaces/ISVGPartRenderer.sol";
+/*
+* ██████╗ ██╗██╗  ██╗████████╗██╗   ██╗██████╗ ███████╗             
+* ██╔══██╗██║╚██╗██╔╝╚══██╔══╝██║   ██║██╔══██╗██╔════╝             
+* ██████╔╝██║ ╚███╔╝    ██║   ██║   ██║██████╔╝█████╗               
+* ██╔═══╝ ██║ ██╔██╗    ██║   ██║   ██║██╔══██╗██╔══╝               
+* ██║     ██║██╔╝ ██╗   ██║   ╚██████╔╝██║  ██║███████╗             
+* ╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝             
+* ████████╗██████╗  █████╗ ██╗   ██╗███████╗██╗     ███████╗██████╗ 
+* ╚══██╔══╝██╔══██╗██╔══██╗██║   ██║██╔════╝██║     ██╔════╝██╔══██╗
+*    ██║   ██████╔╝███████║██║   ██║█████╗  ██║     █████╗  ██████╔╝
+*    ██║   ██╔══██╗██╔══██║╚██╗ ██╔╝██╔══╝  ██║     ██╔══╝  ██╔══██╗
+*    ██║   ██║  ██║██║  ██║ ╚████╔╝ ███████╗███████╗███████╗██║  ██║
+*    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝
+*/
+
+contract HatRenderer13 is ISVGPartRenderer {
+    function render() public pure override returns (string memory) {
+        return render(0);
+    }
+
+    function render(uint _position) public pure returns (string memory) {
+        if (_position == 1) return string(abi.encodePacked(''));
+        else return string(abi.encodePacked('<path fill="#2A2730" d="M360 108h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-27 9h9v9h-9zm36 0h9v9h-9zm-63 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm54 0h9v9h-9zm-126 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm27 0h9v9h-9zm36 0h9v9h-9zm45 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-225 9h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm36 0h9v9h-9zm9 0h9v9h-9zm90 0h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm36 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-261 9h9v9h-9zm27 0h9v9h-9zm45 0h9v9h-9zm9 0h9v9h-9zm81 0h9v9h-9zm36 0h9v9h-9zm9 0h9v9h-9zm36 0h9v9h-9zm27 0h9v9h-9zm-279 9h9v9h-9zm45 0h9v9h-9zm36 0h9v9h-9zm18 0h9v9h-9zm99 0h9v9h-9zm18 0h9v9h-9zm27 0h9v9h-9zm36 0h9v9h-9zm-279 9h9v9h-9zm72 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm63 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm54 0h9v9h-9zm-279 9h9v9h-9zm99 0h9v9h-9zm9 0h9v9h-9zm81 0h9v9h-9zm81 0h9v9h-9zm-261 9h9v9h-9zm9 0h9v9h-9zm90 0h9v9h-9zm45 0h9v9h-9zm36 0h9v9h-9zm-189 9h9v9h-9zm108 0h9v9h-9zm36 0h9v9h-9zm9 0h9v9h-9zm36 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm54 0h9v9h-9zm-279 9h9v9h-9zm45 0h9v9h-9zm27 0h9v9h-9zm36 0h9v9h-9zm9 0h9v9h-9zm36 0h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm27 0h9v9h-9zm36 0h9v9h-9zm36 0h9v9h-9zm-279 9h9v9h-9zm27 0h9v9h-9zm36 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm72 0h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm27 0h9v9h-9zm-261 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm36 0h9v9h-9zm153 0h9v9h-9zm9 0h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm-225 9h9v9h-9zm27 0h9v9h-9zm-18 9h9v9h-9zm9 0h9v9h-9z"/><path fill="#FFFFFE" d="M360 117h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-9 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-63 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-72 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm36 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm63 0h9v9h-9zm36 0h9v9h-9zm9 0h9v9h-9zm-216 9h9v9h-9zm9 0h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm54 0h9v9h-9zm144 0h9v9h-9zm9 0h9v9h-9zm-252 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm36 18h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm45 0h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm-135 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm36 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-135 9h9v9h-9zm9 0h9v9h-9zm207 0h9v9h-9zm36 0h9v9h-9zm-252 9h9v9h-9zm45 0h9v9h-9zm0 9h9v9h-9z"/><path fill="#F6E2BE" d="M351 126h9v9h-9zm9 9h9v9h-9zm9 0h9v9h-9zm9 9h9v9h-9zm9 0h9v9h-9zm-126 9h9v9h-9zm54 0h9v9h-9zm27 0h9v9h-9zm72 0h9v9h-9zm27 0h9v9h-9zm18 0h9v9h-9zm-171 9h9v9h-9zm36 0h9v9h-9zm9 0h9v9h-9zm63 0h9v9h-9zm9 0h9v9h-9zm36 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm-243 9h9v9h-9zm54 0h9v9h-9zm198 0h9v9h-9zm9 0h9v9h-9zm-261 9h9v9h-9zm9 0h9v9h-9zm162 9h9v9h-9zm18 0h9v9h-9zm18 0h9v9h-9zm-153 9h9v9h-9zm36 0h9v9h-9zm18 0h9v9h-9zm45 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm27 0h9v9h-9zm-207 9h9v9h-9zm27 0h9v9h-9zm45 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm81 0h9v9h-9zm18 0h9v9h-9zm36 0h9v9h-9zm-261 9h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm180 0h9v9h-9zm9 0h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm-225 9h9v9h-9zm9 9h9v9h-9zm9 0h9v9h-9z"/><path fill="#FFFAE5" d="M360 126h9v9h-9zm18 9h9v9h-9zm9 0h9v9h-9zm-72 9h9v9h-9zm36 0h9v9h-9zm63 0h9v9h-9zm45 0h9v9h-9zm-171 9h9v9h-9zm36 0h9v9h-9zm72 0h9v9h-9zm9 0h9v9h-9zm45 0h9v9h-9zm-225 9h9v9h-9zm45 0h9v9h-9zm9 0h9v9h-9zm198 0h9v9h-9zm9 0h9v9h-9zm-252 9h9v9h-9zm9 0h9v9h-9zm153 9h9v9h-9zm36 0h9v9h-9zm-117 9h9v9h-9zm18 0h9v9h-9zm45 0h9v9h-9zm9 0h9v9h-9zm36 0h9v9h-9zm-180 9h9v9h-9zm45 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm36 0h9v9h-9zm9 0h9v9h-9zm-117 9h9v9h-9zm207 0h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm-216 9h9v9h-9zm0 9h9v9h-9zm9 0h9v9h-9z"/><path fill="#893A1B" d="M360 144h9v9h-9zm9 0h9v9h-9zm-18 9h9v9h-9zm27 0h9v9h-9zm-36 9h9v9h-9zm45 0h9v9h-9zm-135 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm72 0h9v9h-9zm45 0h9v9h-9zm63 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-225 9h9v9h-9zm36 0h9v9h-9zm72 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm63 0h9v9h-9zm36 0h9v9h-9zm-234 9h9v9h-9zm36 0h9v9h-9zm162 0h9v9h-9zm36 0h9v9h-9zm-225 9h9v9h-9zm18 0h9v9h-9zm180 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-207 9h9v9h-9z"/><path fill="#FFF007" d="M360 153h9v9h-9zm9 0h9v9h-9zm-108 27h9v9h-9zm9 0h9v9h-9zm198 0h9v9h-9z"/><path fill="#FFC539" d="M351 162h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-126 18h9v9h-9zm207 0h9v9h-9zm-198 9h9v9h-9zm9 0h9v9h-9z"/><path fill="#F19319" d="M351 171h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm72 9h9v9h-9zm-198 9h9v9h-9zm198 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-207 9h9v9h-9z"/>'));
+    }
+}
